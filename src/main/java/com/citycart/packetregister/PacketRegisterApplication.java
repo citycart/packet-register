@@ -32,7 +32,7 @@ public class PacketRegisterApplication {
 		SpringApplication.run(PacketRegisterApplication.class, args);
 	}
 
-	@PostConstruct
+//	@PostConstruct
 	public void run(){
 		orderRepository.deleteAll();
 
