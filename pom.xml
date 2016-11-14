@@ -39,6 +39,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.citycart.model</groupId>
+			<artifactId>citycart-model</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -50,5 +56,35 @@
 		</plugins>
 	</build>
 
+	<!--<profiles>
+		<profile>
+			<id>generate-pojo</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>io.atlassian.json-schemagen</groupId>
+						<artifactId>json-schemagen-maven-plugin</artifactId>
+						<version>1.2.0</version>
+						<executions>
+							<execution>
+								<id>generate-schema</id>
+								<phase>process-classes</phase>
+								<goals>
+									<goal>generate-schema</goal>
+								</goals>
+
+								<configuration>
+									<rootClassName>com.citycart.packetregister.model.Order</rootClassName>
+									&lt;!&ndash;<rawOutput>${project.build.resources[0].directory}/model/schema/Order.json</rawOutput>&ndash;&gt;
+									<prettyOutput>${project.build.resources[0].directory}/model/schema/Order.json</prettyOutput>
+									<enumCase>sensitive</enumCase>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>-->
 
 </project>
