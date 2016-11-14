@@ -1,11 +1,11 @@
 package com.citycart.packetregister;
 
-import com.citycart.packetregister.model.Address;
-import com.citycart.packetregister.model.Order;
-import com.citycart.packetregister.model.OrderStatus;
-import com.citycart.packetregister.model.Retailer;
-import com.citycart.packetregister.model.builder.AddressBuilder;
-import com.citycart.packetregister.model.builder.OrderBuilder;
+import com.citycart.model.Address;
+import com.citycart.model.Order;
+import com.citycart.model.OrderStatus;
+import com.citycart.model.Retailer;
+import com.citycart.model.builder.AddressBuilder;
+import com.citycart.model.builder.OrderBuilder;
 import com.citycart.packetregister.repository.OrderRepository;
 import com.citycart.packetregister.repository.RetailerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import org.springframework.data.mongodb.config.EnableMongoAuditing;
 
 import javax.annotation.PostConstruct;
 
-import static com.citycart.packetregister.model.OrderStatus.Status.CREATED;
+import static com.citycart.model.OrderStatus.Status.CREATED;
 import static java.time.LocalDateTime.now;
 
 @SpringBootApplication
