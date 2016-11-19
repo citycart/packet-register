@@ -40,11 +40,11 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>com.citycart.model</groupId>
-			<artifactId>citycart-model</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.citycart.model</groupId>-->
+			<!--<artifactId>citycart-model</artifactId>-->
+			<!--<version>0.0.1-SNAPSHOT</version>-->
+		<!--</dependency>-->
 	</dependencies>
 
 	<build>

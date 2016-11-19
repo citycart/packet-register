@@ -1,7 +1,7 @@
 package com.citycart.packetregister.repository;
 
-import com.citycart.model.Order;
-import com.citycart.model.OrderStatus.Status;
+import com.citycart.packetregister.model.Order;
+import com.citycart.packetregister.model.OrderStatus.Status;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;

@@ -1,6 +1,6 @@
 package com.citycart.packetregister.repository;
 
-import com.citycart.model.Retailer;
+import com.citycart.packetregister.model.Retailer;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**
